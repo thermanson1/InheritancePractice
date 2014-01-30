@@ -10,6 +10,7 @@ public class HourlyEmployee extends Employee {
         
         double hourlyRate;
         double totalHours;
+        double totalEarned;
         String personFirstName;
         String personLastName;
         String personDept;
@@ -39,7 +40,10 @@ public class HourlyEmployee extends Employee {
         System.out.println("Enter the number of hours the employee worked: ");
         totalHours = keyboard.nextDouble();
         
-        System.out.print("Employee Name: " + person1.getFirstName + person1.getLastName + "<br>");
+        totalEarned = totalHours * hourlyRate;
+        
+        System.out.print("Employee Name: " + person1.getFirstName() + " " + person1.getLastName() + "\n" + "Total Hours Worked: " + totalHours + "\n");
+        System.out.print("Total wages earned: $" + totalEarned);
         
     
     
