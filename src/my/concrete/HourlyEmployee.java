@@ -4,16 +4,16 @@ package my.concrete;
 import java.util.Scanner;
 
 public class HourlyEmployee extends Employee {
+        private double hourlyRate;
+        private double totalHours;
+        private double totalEarned;
+        private String personFirstName;
+        private String personLastName;
+        private String personDept;
     
-    
-    public static void main(String[] args){
+    public double main(String[] args){
         
-        double hourlyRate;
-        double totalHours;
-        double totalEarned;
-        String personFirstName;
-        String personLastName;
-        String personDept;
+        
         
         Scanner keyboard = new Scanner(System.in);
         
@@ -45,7 +45,7 @@ public class HourlyEmployee extends Employee {
         System.out.print("Employee Name: " + person1.getFirstName() + " " + person1.getLastName() + "\n" + "Total Hours Worked: " + totalHours + "\n");
         System.out.print("Total wages earned: $" + totalEarned);
         
-    
+        return totalEarned;
     
     
     
