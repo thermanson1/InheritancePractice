@@ -10,7 +10,7 @@ package myinterface;
  *
  * @author Teraesa
  */
-public class SalaryPlusCommissionEmployee extends SalariedEmployee implements Employee {
+public class SalaryPlusCommissionEmployee extends SalariedEmployee {
     private String firstName;
     private String lastName;
     private String department;
